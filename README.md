@@ -1,5 +1,5 @@
 # Basic Java Console User Registration Application
-Whats Included?
+What's Included?
 
 #### 1. Accessor and Mutator for each data attribute.
 #### 2. String to date functionality for assigning birthday attribute.
