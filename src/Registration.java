@@ -8,6 +8,7 @@ public class Registration {
     private String firstName, surName, password, email, mobileNumber;
     private Date birthday;
     private char gender;
+    private int rewardPoint;
 
 
 //    Constructor
@@ -20,13 +21,14 @@ public class Registration {
         this.mobileNumber = mobileNumber;
         this.birthday = birthday;
         this.gender = gender;
+        this.rewardPoint = 25;
 
+    }//    Default Constructor
+
+    public Registration(){
+        this.rewardPoint = 25;
     }
-//    Default Constructor
 
-    public Registration() {
-
-    }
 
 //Getter
     public char getGender(){
@@ -61,6 +63,7 @@ public class Registration {
     }
 
     public void setFirstName(String firstname) {
+
         this.firstName = firstname;
     }
 
@@ -96,5 +99,14 @@ public class Registration {
         this.mobileNumber = mobileNumber;
     }
 
+    public int displayRewardPoints(){
+        return rewardPoint;
+    }
+    public void deductRewardPoints(int rewardPoint){
+        this.rewardPoint-=rewardPoint;
+    }
+    public void addRewardPoints(int rewardPoint){
+        this.rewardPoint+=rewardPoint;
+    }
 
 }

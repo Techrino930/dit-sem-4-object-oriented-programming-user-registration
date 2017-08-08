@@ -42,6 +42,6 @@ public class Main {
         System.out.println("Mobile Number: " +  user.getMobileNumber());
         System.out.println("Email: " + user.getEmail());
         System.out.println("Birthday: " + user.getBirthday());
-
+        System.out.println("Reward Points: " +user.displayRewardPoints());
     }
 }
