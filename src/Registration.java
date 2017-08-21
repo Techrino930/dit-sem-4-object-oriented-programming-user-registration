@@ -5,7 +5,7 @@ import java.util.*;
 public class Registration {
 
 //    Attribute
-    private String firstName, surName, password, email, mobileNumber;
+    private String firstName, surName, password , email, mobileNumber;
     private Date birthday;
     private char gender;
     private int rewardPoint;
@@ -13,15 +13,15 @@ public class Registration {
 
 //    Constructor
 
-    public Registration(String firstName, String surName, String password, String email, String mobileNumber, Date birthday, char gender) throws ParseException {
+    public Registration(String firstName, String surName, String password,  String email, String mobileNumber, Date birthday, char gender)  {
         this.firstName = firstName;
         this.surName = surName;
-        this.password = password;
         this.email = email;
         this.mobileNumber = mobileNumber;
         this.birthday = birthday;
         this.gender = gender;
         this.rewardPoint = 25;
+        this.password = password;
 
     }//    Default Constructor
 
@@ -75,14 +75,6 @@ public class Registration {
         this.surName = surName;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -109,4 +101,7 @@ public class Registration {
         this.rewardPoint+=rewardPoint;
     }
 
+    public void setPassword(String newPassword) {
+        this.password = newPassword;
+    }
 }
